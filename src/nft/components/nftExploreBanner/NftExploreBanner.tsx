@@ -32,10 +32,10 @@ const PopupContainer = styled.div<{ show: boolean }>`
   right: clamp(0px, 1vw, 16px);
   z-index: ${Z_INDEX.sticky};
   transition: ${({
-    theme: {
-      transition: { duration, timing },
-    },
-  }) => `${duration.slow} opacity ${timing.in}`};
+  theme: {
+    transition: { duration, timing },
+  },
+}) => `${duration.slow} opacity ${timing.in}`};
   width: 98vw;
   bottom: 55px;
   @media screen and (min-width: ${LARGE_MEDIA_BREAKPOINT}) {
@@ -48,7 +48,7 @@ const PopupContainer = styled.div<{ show: boolean }>`
     border: double 1px transparent;
     border-radius: 12px;
     background-image: ${({ theme }) =>
-      `linear-gradient(${theme.backgroundSurface}, ${theme.backgroundSurface}), 
+    `linear-gradient(${theme.backgroundSurface}, ${theme.backgroundSurface}), 
       radial-gradient(circle at top left, hsla(299, 100%, 87%, 1), hsla(299, 100%, 61%, 1))`};
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -114,7 +114,7 @@ export default function NftExploreBanner() {
         <TextContainer>
           {/* <HeaderText> */}
           <div className={subhead}>
-            <Trans>Introducing NFTs on Uniswap</Trans>
+            <Trans>Introducing NFTs on SoulSwap</Trans>
           </div>
           {/* </HeaderText> */}
 

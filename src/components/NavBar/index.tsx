@@ -76,18 +76,18 @@ const PageTabs = () => {
 
   return (
     <>
-      <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
+      {/* <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
         <Trans>Swap</Trans>
       </MenuItem>
       <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
         <Trans>Tokens</Trans>
-      </MenuItem>
+      </MenuItem> */}
       <MenuItem href="/nfts" isActive={isNftPage}>
         <Trans>NFTs</Trans>
       </MenuItem>
-      <MenuItem href="/pool" id="pool-nav-link" isActive={isPoolActive}>
+      {/* <MenuItem href="/pool" id="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pool</Trans>
-      </MenuItem>
+      </MenuItem> */}
     </>
   )
 }
@@ -102,14 +102,14 @@ const Navbar = () => {
         <Box display="flex" height="full" flexWrap="nowrap" alignItems="stretch">
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer}>
-              <UniIcon
+              {/* <UniIcon
                 width="48"
                 height="48"
                 className={styles.logo}
                 onClick={() => {
                   navigate('/')
                 }}
-              />
+              /> */}
             </Box>
             {!isNftPage && (
               <Box display={{ sm: 'flex', lg: 'none' }}>

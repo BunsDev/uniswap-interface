@@ -33,7 +33,7 @@ const AbsoluteFill = styled.div`
 
 // Safari has issues with blur / overflow, forcing GPU rendering with `translate3d` fixes it
 // https://stackoverflow.com/a/71353198
-const BannerBackground = styled(AbsoluteFill)<{ backgroundImage: string }>`
+const BannerBackground = styled(AbsoluteFill) <{ backgroundImage: string }>`
   transform: translate3d(0, 0, 0) scaleY(1.1);
 
   background-image: ${(props) => `url(${props.backgroundImage})`};
@@ -162,11 +162,11 @@ const Banner = () => {
         )
       ) : null}
       <BannerMainArea>
-        <HeaderContainer>
+        {/* <HeaderContainer>
           Better prices. <br />
           More listings.
-        </HeaderContainer>
-        {collections ? (
+        </HeaderContainer> */}
+        {/* {collections ? (
           <Carousel activeIndex={activeCollectionIdx} toggleNextSlide={onToggleNextSlide}>
             {collections.map((collection) => (
               <Suspense fallback={<LoadingCarouselCard collection={collection} />} key={collection.address}>
@@ -182,7 +182,7 @@ const Banner = () => {
           <LoadingCarousel>
             <LoadingCarouselCard />
           </LoadingCarousel>
-        )}
+        )} */}
       </BannerMainArea>
     </BannerContainer>
   )
