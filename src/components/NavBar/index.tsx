@@ -12,7 +12,7 @@ import styled from 'styled-components/macro'
 
 import { Bag } from './Bag'
 import { ChainSelector } from './ChainSelector'
-import { MenuDropdown } from './MenuDropdown'
+// import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
 
@@ -128,9 +128,9 @@ const Navbar = () => {
               <Box position="relative" display={{ sm: 'flex', xl: 'none' }}>
                 <SearchBar />
               </Box>
-              <Box display={{ sm: 'none', lg: 'flex' }}>
+              {/* <Box display={{ sm: 'none', lg: 'flex' }}>
                 <MenuDropdown />
-              </Box>
+              </Box> */}
               {isNftPage && <Bag />}
               {!isNftPage && (
                 <Box display={{ sm: 'none', lg: 'flex' }}>
@@ -145,9 +145,9 @@ const Navbar = () => {
       </Nav>
       <MobileBottomBar>
         <PageTabs />
-        <Box marginY="4">
+        {/* <Box marginY="4">
           <MenuDropdown />
-        </Box>
+        </Box> */}
       </MobileBottomBar>
     </>
   )
